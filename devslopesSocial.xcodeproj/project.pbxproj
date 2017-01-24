@@ -8,15 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		220210B6CF368CC0910D844A /* Pods_devslopesSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849CD8D6FF7BEE5580968D99 /* Pods_devslopesSocial.framework */; };
+		476169ED1E371A05005CD4BD /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476169EC1E371A05005CD4BD /* FancyButton.swift */; };
+		476169F21E371F02005CD4BD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476169EE1E371F02005CD4BD /* Bolts.framework */; };
+		476169F31E371F02005CD4BD /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476169EF1E371F02005CD4BD /* FBSDKCoreKit.framework */; };
+		476169F41E371F02005CD4BD /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476169F01E371F02005CD4BD /* FBSDKLoginKit.framework */; };
+		476169F51E371F02005CD4BD /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476169F11E371F02005CD4BD /* FBSDKShareKit.framework */; };
 		478361801E32877000CCDA84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4783617F1E32877000CCDA84 /* AppDelegate.swift */; };
 		478361821E32877000CCDA84 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478361811E32877000CCDA84 /* SignInVC.swift */; };
 		478361851E32877100CCDA84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 478361831E32877100CCDA84 /* Main.storyboard */; };
 		478361871E32877100CCDA84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 478361861E32877100CCDA84 /* Assets.xcassets */; };
 		4783618A1E32877100CCDA84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 478361881E32877100CCDA84 /* LaunchScreen.storyboard */; };
 		478361921E3287FD00CCDA84 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 478361911E3287FD00CCDA84 /* GoogleService-Info.plist */; };
+		47E4E2A01E33AEA0002D0191 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4E29F1E33AEA0002D0191 /* FancyView.swift */; };
+		47E4E2A31E33AF48002D0191 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4E2A21E33AF48002D0191 /* Constants.swift */; };
+		47E4E2A51E33B213002D0191 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4E2A41E33B213002D0191 /* RoundButton.swift */; };
+		47E4E2A71E33B57A002D0191 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4E2A61E33B57A002D0191 /* FancyField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		476169EC1E371A05005CD4BD /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
+		476169EE1E371F02005CD4BD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		476169EF1E371F02005CD4BD /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		476169F01E371F02005CD4BD /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		476169F11E371F02005CD4BD /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		476169F71E37291C005CD4BD /* devslopesSocial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = devslopesSocial.entitlements; sourceTree = "<group>"; };
 		4783617C1E32877000CCDA84 /* devslopesSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = devslopesSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4783617F1E32877000CCDA84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		478361811E32877000CCDA84 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInVC.swift; path = devslopesSocial/SignInVC.swift; sourceTree = "<group>"; };
@@ -25,6 +40,10 @@
 		478361891E32877100CCDA84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4783618B1E32877100CCDA84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		478361911E3287FD00CCDA84 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		47E4E29F1E33AEA0002D0191 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		47E4E2A21E33AF48002D0191 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		47E4E2A41E33B213002D0191 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		47E4E2A61E33B57A002D0191 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		849CD8D6FF7BEE5580968D99 /* Pods_devslopesSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_devslopesSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9868F5AC6AE2FFDB934E14E9 /* Pods-devslopesSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopesSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-devslopesSocial/Pods-devslopesSocial.debug.xcconfig"; sourceTree = "<group>"; };
 		DA5FEAB66676A436F8E12E05 /* Pods-devslopesSocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopesSocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-devslopesSocial/Pods-devslopesSocial.release.xcconfig"; sourceTree = "<group>"; };
@@ -36,6 +55,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				220210B6CF368CC0910D844A /* Pods_devslopesSocial.framework in Frameworks */,
+				476169F31E371F02005CD4BD /* FBSDKCoreKit.framework in Frameworks */,
+				476169F51E371F02005CD4BD /* FBSDKShareKit.framework in Frameworks */,
+				476169F41E371F02005CD4BD /* FBSDKLoginKit.framework in Frameworks */,
+				476169F21E371F02005CD4BD /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,14 +74,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		476169F61E3721E0005CD4BD /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				4783618B1E32877100CCDA84 /* Info.plist */,
+				478361911E3287FD00CCDA84 /* GoogleService-Info.plist */,
+			);
+			name = Plist;
+			path = devslopesSocial;
+			sourceTree = "<group>";
+		};
 		478361731E32877000CCDA84 = {
 			isa = PBXGroup;
 			children = (
+				47E4E2A11E33AF31002D0191 /* Utilities */,
 				478361951E328A1400CCDA84 /* Controller */,
 				478361941E328A0F00CCDA84 /* View */,
 				478361931E328A0500CCDA84 /* Model */,
 				4783617E1E32877000CCDA84 /* devslopesSocial */,
 				4783617D1E32877000CCDA84 /* Products */,
+				476169F61E3721E0005CD4BD /* Plist */,
 				25AA7B6FFEDC50CC5C2C791D /* Pods */,
 				87569D691B3654C90AE24575 /* Frameworks */,
 			);
@@ -75,12 +110,11 @@
 		4783617E1E32877000CCDA84 /* devslopesSocial */ = {
 			isa = PBXGroup;
 			children = (
+				476169F71E37291C005CD4BD /* devslopesSocial.entitlements */,
 				4783617F1E32877000CCDA84 /* AppDelegate.swift */,
-				478361831E32877100CCDA84 /* Main.storyboard */,
 				478361861E32877100CCDA84 /* Assets.xcassets */,
+				478361831E32877100CCDA84 /* Main.storyboard */,
 				478361881E32877100CCDA84 /* LaunchScreen.storyboard */,
-				4783618B1E32877100CCDA84 /* Info.plist */,
-				478361911E3287FD00CCDA84 /* GoogleService-Info.plist */,
 			);
 			path = devslopesSocial;
 			sourceTree = "<group>";
@@ -95,6 +129,10 @@
 		478361941E328A0F00CCDA84 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				47E4E29F1E33AEA0002D0191 /* FancyView.swift */,
+				47E4E2A41E33B213002D0191 /* RoundButton.swift */,
+				47E4E2A61E33B57A002D0191 /* FancyField.swift */,
+				476169EC1E371A05005CD4BD /* FancyButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -107,9 +145,21 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		47E4E2A11E33AF31002D0191 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				47E4E2A21E33AF48002D0191 /* Constants.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		87569D691B3654C90AE24575 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				476169EE1E371F02005CD4BD /* Bolts.framework */,
+				476169EF1E371F02005CD4BD /* FBSDKCoreKit.framework */,
+				476169F01E371F02005CD4BD /* FBSDKLoginKit.framework */,
+				476169F11E371F02005CD4BD /* FBSDKShareKit.framework */,
 				849CD8D6FF7BEE5580968D99 /* Pods_devslopesSocial.framework */,
 			);
 			name = Frameworks;
@@ -152,6 +202,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = X6CGCMD9N3;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -240,8 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E4E2A71E33B57A002D0191 /* FancyField.swift in Sources */,
 				478361821E32877000CCDA84 /* SignInVC.swift in Sources */,
+				47E4E2A51E33B213002D0191 /* RoundButton.swift in Sources */,
+				476169ED1E371A05005CD4BD /* FancyButton.swift in Sources */,
 				478361801E32877000CCDA84 /* AppDelegate.swift in Sources */,
+				47E4E2A01E33AEA0002D0191 /* FancyView.swift in Sources */,
+				47E4E2A31E33AF48002D0191 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +423,12 @@
 			baseConfigurationReference = 9868F5AC6AE2FFDB934E14E9 /* Pods-devslopesSocial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = devslopesSocial/devslopesSocial.entitlements;
 				DEVELOPMENT_TEAM = X6CGCMD9N3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = devslopesSocial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Saud.devslopesSocial;
@@ -377,7 +442,12 @@
 			baseConfigurationReference = DA5FEAB66676A436F8E12E05 /* Pods-devslopesSocial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = devslopesSocial/devslopesSocial.entitlements;
 				DEVELOPMENT_TEAM = X6CGCMD9N3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = devslopesSocial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Saud.devslopesSocial;
