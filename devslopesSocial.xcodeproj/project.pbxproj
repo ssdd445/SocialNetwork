@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		220210B6CF368CC0910D844A /* Pods_devslopesSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849CD8D6FF7BEE5580968D99 /* Pods_devslopesSocial.framework */; };
 		4717D8021E37408500BB49CC /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717D8011E37408500BB49CC /* FeedVC.swift */; };
+		4717D8041E37614F00BB49CC /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717D8031E37614F00BB49CC /* CircleView.swift */; };
+		4717D8061E3767A500BB49CC /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717D8051E3767A500BB49CC /* PostVC.swift */; };
+		4717D8081E3767C700BB49CC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717D8071E3767C700BB49CC /* TableViewCell.swift */; };
 		476169ED1E371A05005CD4BD /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476169EC1E371A05005CD4BD /* FancyButton.swift */; };
 		476169F21E371F02005CD4BD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476169EE1E371F02005CD4BD /* Bolts.framework */; };
 		476169F31E371F02005CD4BD /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476169EF1E371F02005CD4BD /* FBSDKCoreKit.framework */; };
@@ -28,6 +31,9 @@
 
 /* Begin PBXFileReference section */
 		4717D8011E37408500BB49CC /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		4717D8031E37614F00BB49CC /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		4717D8051E3767A500BB49CC /* PostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		4717D8071E3767C700BB49CC /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		476169EC1E371A05005CD4BD /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		476169EE1E371F02005CD4BD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		476169EF1E371F02005CD4BD /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
@@ -135,6 +141,8 @@
 				47E4E2A41E33B213002D0191 /* RoundButton.swift */,
 				47E4E2A61E33B57A002D0191 /* FancyField.swift */,
 				476169EC1E371A05005CD4BD /* FancyButton.swift */,
+				4717D8031E37614F00BB49CC /* CircleView.swift */,
+				4717D8071E3767C700BB49CC /* TableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -144,6 +152,7 @@
 			children = (
 				478361811E32877000CCDA84 /* SignInVC.swift */,
 				4717D8011E37408500BB49CC /* FeedVC.swift */,
+				4717D8051E3767A500BB49CC /* PostVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -298,10 +307,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4717D8041E37614F00BB49CC /* CircleView.swift in Sources */,
 				47E4E2A71E33B57A002D0191 /* FancyField.swift in Sources */,
 				478361821E32877000CCDA84 /* SignInVC.swift in Sources */,
 				47E4E2A51E33B213002D0191 /* RoundButton.swift in Sources */,
+				4717D8061E3767A500BB49CC /* PostVC.swift in Sources */,
 				476169ED1E371A05005CD4BD /* FancyButton.swift in Sources */,
+				4717D8081E3767C700BB49CC /* TableViewCell.swift in Sources */,
 				4717D8021E37408500BB49CC /* FeedVC.swift in Sources */,
 				478361801E32877000CCDA84 /* AppDelegate.swift in Sources */,
 				47E4E2A01E33AEA0002D0191 /* FancyView.swift in Sources */,
