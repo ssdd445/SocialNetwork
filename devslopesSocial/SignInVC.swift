@@ -2,6 +2,7 @@ import UIKit
 import FBSDKLoginKit
 import FBSDKCoreKit
 import Firebase
+import SwiftKeychainWrapper
 
 class SignInVC: UIViewController
 {
@@ -39,11 +40,14 @@ class SignInVC: UIViewController
         FIRAuth.auth()?.signIn(with: credential, completion: { (result, error) in
             if error != nil
             {
-                print("UABLE to authentice with firebase")
+                print("UNABLE to authentice with firebase")
             }
             else
             {
                 print("SAUD: it's all fully authenticated with firebase")
+                let customKeychainWrapperInstance:KeychainWrapper!
+                customKeychainWrapperInstance.set(<#T##value: Bool##Bool#>, forKey: <#T##String#>)
+                customKeychainWrapperInstance.string(forKey: "myKey")
             }
         })
     }
