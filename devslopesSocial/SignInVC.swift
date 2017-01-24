@@ -14,6 +14,15 @@ class SignInVC: UIViewController
         super.viewDidLoad()
     }
     
+    override func viewDidAppear(_ animated: Bool)
+    {
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID)
+        {
+            performSegue(withIdentifier: "goToFeed", sender: nil)
+        }
+    }
+    
+    
     @IBAction func facebookButtonTapped(_ sender: Any)
     {
         let facebookLogin = FBSDKLoginManager()
@@ -37,7 +46,7 @@ class SignInVC: UIViewController
     
     func fireBaseAuth(_ credential: FIRAuthCredential)
     {
-        FIRAuth.auth()?.signIn(with: credential, completion: { (result, error) in
+        FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
             if error != nil
             {
                 print("UNABLE to authentice with firebase")
@@ -45,9 +54,7 @@ class SignInVC: UIViewController
             else
             {
                 print("SAUD: it's all fully authenticated with firebase")
-                let customKeychainWrapperInstance:KeychainWrapper!
-                customKeychainWrapperInstance.set(<#T##value: Bool##Bool#>, forKey: <#T##String#>)
-                customKeychainWrapperInstance.string(forKey: "myKey")
+                KeychainWrapper.standard.set((user?.uid)!, forKey: KEY_UID)
             }
         })
     }
@@ -60,6 +67,7 @@ class SignInVC: UIViewController
                 if error == nil
                 {
                     print("Email has been given acccess")
+                    self.completeSignIn(id: (user?.uid)!)
                 }
                 else
                 {
@@ -71,10 +79,19 @@ class SignInVC: UIViewController
                         else
                         {
                             print("Saud: Successfully, user has been authenticated ussingthe email method")
+                            self.completeSignIn(id: (user?.uid)!)
                         }
                     })
                 }
             })
         }
     }
+    
+    func completeSignIn(id: String)
+    {
+        KeychainWrapper.standard.set(id, forKey: KEY_UID)
+        print("SAUD: Keychain setup has been done")
+        performSegue(withIdentifier: "goToFeed", sender: nil)
+    }
+
 }

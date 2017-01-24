@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		220210B6CF368CC0910D844A /* Pods_devslopesSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849CD8D6FF7BEE5580968D99 /* Pods_devslopesSocial.framework */; };
+		4717D8021E37408500BB49CC /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717D8011E37408500BB49CC /* FeedVC.swift */; };
 		476169ED1E371A05005CD4BD /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476169EC1E371A05005CD4BD /* FancyButton.swift */; };
 		476169F21E371F02005CD4BD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476169EE1E371F02005CD4BD /* Bolts.framework */; };
 		476169F31E371F02005CD4BD /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476169EF1E371F02005CD4BD /* FBSDKCoreKit.framework */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4717D8011E37408500BB49CC /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		476169EC1E371A05005CD4BD /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		476169EE1E371F02005CD4BD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		476169EF1E371F02005CD4BD /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				478361811E32877000CCDA84 /* SignInVC.swift */,
+				4717D8011E37408500BB49CC /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				478361821E32877000CCDA84 /* SignInVC.swift in Sources */,
 				47E4E2A51E33B213002D0191 /* RoundButton.swift in Sources */,
 				476169ED1E371A05005CD4BD /* FancyButton.swift in Sources */,
+				4717D8021E37408500BB49CC /* FeedVC.swift in Sources */,
 				478361801E32877000CCDA84 /* AppDelegate.swift in Sources */,
 				47E4E2A01E33AEA0002D0191 /* FancyView.swift in Sources */,
 				47E4E2A31E33AF48002D0191 /* Constants.swift in Sources */,
