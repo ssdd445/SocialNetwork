@@ -1,6 +1,14 @@
+//
+//  CellVC.swift
+//  devslopesSocial
+//
+//  Created by Waqar Air on 1/25/17.
+//  Copyright © 2017 Saud. All rights reserved.
+//
+
 import UIKit
 
-class TableViewCell: UITableViewCell {
+class CellVC: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
