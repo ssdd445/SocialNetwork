@@ -21,8 +21,7 @@ class SignInVC: UIViewController
             performSegue(withIdentifier: "goToFeed", sender: nil)
         }
     }
-    
-    
+
     @IBAction func facebookButtonTapped(_ sender: Any)
     {
         let facebookLogin = FBSDKLoginManager()
@@ -49,11 +48,12 @@ class SignInVC: UIViewController
         FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
             if error != nil
             {
-                print("UNABLE to authentice with firebase")
+                print("UNABLE to authenticate with firebase")
             }
             else
             {
                 print("SAUD: it's all fully authenticated with firebase")
+                self.completeSignIn(id: (user?.uid)!, userData: credential.provider as! Dictionary<String,String>)      
                 KeychainWrapper.standard.set((user?.uid)!, forKey: KEY_UID)
             }
         })
@@ -67,7 +67,8 @@ class SignInVC: UIViewController
                 if error == nil
                 {
                     print("Email has been given acccess")
-                    self.completeSignIn(id: (user?.uid)!)
+                    let userData = ["providers" : user?.providerID]
+                    self.completeSignIn(id: (user?.uid)!,userData: userData as! Dictionary<String, String>)
                 }
                 else
                 {
@@ -78,8 +79,9 @@ class SignInVC: UIViewController
                         }
                         else
                         {
-                            print("Saud: Successfully, user has been authenticated ussingthe email method")
-                            self.completeSignIn(id: (user?.uid)!)
+                            print("Saud:  Successfully, user has been authenticated using the email method")
+                            let userData = ["provider" : user?.providerID]
+                            self.completeSignIn(id: (user?.uid)!,userData: userData as! Dictionary<String,String>)
                         }
                     })
                 }
@@ -87,8 +89,9 @@ class SignInVC: UIViewController
         }
     }
     
-    func completeSignIn(id: String)
+    func completeSignIn(id: String,userData: Dictionary<String,String>)
     {
+        DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
         KeychainWrapper.standard.set(id, forKey: KEY_UID)
         print("SAUD: Keychain setup has been done")
         performSegue(withIdentifier: "goToFeed", sender: nil)

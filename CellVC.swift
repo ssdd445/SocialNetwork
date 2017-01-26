@@ -9,7 +9,13 @@
 import UIKit
 
 class CellVC: UITableViewCell {
-
+    
+    @IBOutlet weak var profileImage:UIImageView!
+    @IBOutlet weak var userName:UILabel!
+    @IBOutlet weak var postImage:UIImageView!
+    @IBOutlet weak var caption:UITextView!
+    @IBOutlet weak var likesLabel:UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
